@@ -7,7 +7,8 @@
 header h1,
 section h2,
 section h3,
-form button {
+form button,
+h2 {
     font-family: 'Bungee', cursive;
     font-weight: normal;
 }
@@ -34,9 +35,9 @@ header nav li a {
     
 }
 .container {
-max-width: 1280px;
+max-width: 1024px;
 width: 100%;
-margin: 0 auto;
+margin: 10px auto;
 }
 
 header .container,
@@ -47,8 +48,18 @@ section .container {
     
 }
 
+p {
+    
+    max-width: 320px;
+}
+
 .brands-list img {
     height: 24px;
+}
+
+.conteudo img {
+    width: 320px;
+    height: 320px; 
 }
 
 .brands-list li {
@@ -62,6 +73,7 @@ section .container {
 
 section {
     padding: 24px 0 ;
+    margin-right: 8px;
 }
 
 section h2 {
@@ -69,9 +81,14 @@ section h2 {
     
 }
 
-section {
+section, h2 {
     color: #182c61;
-}
+    margin-right: 16px;
+    }
+
+    h2 {
+        text-align: center;
+    }
 
 section p {
     margin-bottom: 8px;
@@ -137,4 +154,195 @@ footer {
     background-color: #182c61;
     color: #ecf0f1;
     padding: 16px 0;
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%;
+    row-gap: 5%;
+    padding-left: 80px;
+    
+    
+}
+
+.btn-adicionar {
+background-color: rgb(135,206,235);
+cursor: pointer;
+border-radius: 20px;
+height: 30px;
+width: 50%;
+font-family: 'Roboto', sans-serif;
+font-weight: bolder;
+
+}
+
+@media screen and (max-width: 767px) {
+
+.conteudo {
+    display: block;
+    padding-left: 10px;
+}
+
+.container,
+.conteudo,
+{
+    display: block;
+    max-width: 90%;
+    padding-left: 10px;
+}
+
+    header .container,
+section .container,
+.contact-methods {
+    display: block;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+.store-front {
+
+    display: block;
+    max-width: 90%;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.conteudo .produto {
+    margin-bottom: 32px;
+}
+.btn-adicionar {
+    background-color: rgb(135,206,235);
+    cursor: pointer;
+    border-radius: 20px;
+    height: 30px;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    header, .container{
+        align-items: center;
+    }
+    .container,
+    .conteudo,
+    {
+        display: flex;
+        max-width: 100%;
+        
+    }
+    
+    header .container,
+    section .container,
+    .contact-methods {
+        display: block;
+        align-items: center;
+        padding-left: 10px;
+        
+    }
+    
+    p {
+        max-width: 100%;
+    }
+    .store-front {
+    
+        display: block;
+        max-width: 90%;
+        align-items: center;
+        padding-left: 8px;
+    }
+    
+    .conteudo .produto {
+        margin-bottom: 32px;
+    }
+    .btn-adicionar {
+        background-color: rgb(135,206,235);
+        cursor: pointer;
+        border-radius: 20px;
+        height: 30px;
+        width: 50%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;~
+        
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 2%;
+        row-gap: 5%;
+        padding-left: 25px;
+        }
+
+    #contact{
+        margin-top: 100px;
+    
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    header, .container{
+        align-items: center;
+    }
+    .container,
+    .conteudo,
+    {
+        display: flex;
+        max-width: 90%;
+        
+    }
+    
+        header .container,
+    section .container,
+    .contact-methods {
+        display: block;
+        align-items: center;
+        padding-left: 10px;
+        max-width: 100%;
+        
+    }
+    
+    p {
+        max-width: 100%;
+    }
+    .store-front {
+    
+        display: block;
+        max-width: 90%;
+        align-items: center;
+        padding-left: 8px;
+    }
+    
+    .conteudo .produto {
+        margin-bottom: 32px;
+    }
+    .btn-adicionar {
+        background-color: rgb(135,206,235);
+        cursor: pointer;
+        border-radius: 20px;
+        height: 30px;
+        width: 50%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;~
+        
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+        row-gap: 5%;
+        padding-left: 25px;
+        }
+
+    #contact{
+        margin-top: 100px;
+    
+    }
 }
