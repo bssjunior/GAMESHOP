@@ -162,7 +162,7 @@ footer {
     grid-template-columns: repeat(4, 24.5%);
     column-gap: 1%;
     row-gap: 5%;
-    padding-left: 80px;
+    padding-left: 6px;
     
     
 }
@@ -285,7 +285,7 @@ section .container,
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
 
     header, .container{
         align-items: center;
