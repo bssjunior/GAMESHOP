@@ -58,8 +58,8 @@ p {
 }
 
 .conteudo img {
-    width: 320px;
-    height: 320px; 
+    width: 90%;
+    height: 50%; 
 }
 
 .brands-list li {
